@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "UJ/PmisftmliSpooAtdZs5PA2LYIC5Y+zbl+ak+3woMk+U++VuyAQ81Ca/NEm6SocYQuxMX+xHeE4m4z9ibsVA==",
+  "dgSpecHash": "omdPGKj76IjftJgUHSavT39k/r6cQ8yU264bZD1xvcO3qJPXbUAWO/c6g+SZT7mYQdcOPU37Bdj9g9zsfm3puA==",
   "success": true,
   "projectFilePath": "C:\\Users\\53976212857.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\53976212857.INFOSCS\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
     "C:\\Users\\53976212857.INFOSCS\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\53976212857.INFOSCS\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.14\\microsoft.aspnetcore.authentication.jwtbearer.5.0.14.nupkg.sha512",
     "C:\\Users\\53976212857.INFOSCS\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.14\\microsoft.aspnetcore.jsonpatch.5.0.14.nupkg.sha512",

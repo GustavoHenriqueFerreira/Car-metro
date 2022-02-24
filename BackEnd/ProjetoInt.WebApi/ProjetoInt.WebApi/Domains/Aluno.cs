@@ -12,12 +12,12 @@ namespace ProjetoInt.WebApi.Domains
         public string NomeAluno { get; set; }
         public string RgAluno { get; set; }
         public string TelefoneAluno { get; set; }
-        public string FotoAluno { get; set; }
         public DateTime DataMatricula { get; set; }
         public string Comorbidade { get; set; }
         public string Comentario { get; set; }
         public bool? Aprovado { get; set; }
 
         public virtual Turma IdTurmaNavigation { get; set; }
+        public virtual FotoAluno FotoAluno { get; set; }
     }
 }
