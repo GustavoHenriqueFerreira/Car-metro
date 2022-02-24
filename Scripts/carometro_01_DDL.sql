@@ -39,10 +39,19 @@ CREATE TABLE aluno(
    nomeAluno varchar(200) unique not null,
    rgAluno varchar (20) unique not null,
    telefoneAluno varchar (50) unique not null,
-   fotoAluno varchar (200) unique not null,
    dataMatricula date not null,
    comorbidade varchar (100) not null,
    comentario varchar (4000),
    aprovado bit,
 );
 go
+
+CREATE TABLE fotoAluno (
+    idFotoAluno INT PRIMARY KEY IDENTITY(1,1),
+    idAluno SMALLINT NOT NULL UNIQUE FOREIGN KEY REFERENCES aluno(idAluno),
+    binario VARBINARY(MAX) NOT NULL,
+    mimeType VARCHAR(30) NOT NULL,
+    nomeArquivo VARCHAR(250) NOT NULL,
+    data_inclusao DATETIME DEFAULT GETDATE() NULL
+);
+GO
