@@ -48,7 +48,7 @@ go
 
 CREATE TABLE fotoAluno (
     idFotoAluno INT PRIMARY KEY IDENTITY(1,1),
-    idAluno SMALLINT NOT NULL UNIQUE FOREIGN KEY REFERENCES aluno(idAluno),
+    idAluno SMALLINT FOREIGN KEY REFERENCES aluno(idAluno),
     binario VARBINARY(MAX) NOT NULL,
     mimeType VARCHAR(30) NOT NULL,
     nomeArquivo VARCHAR(250) NOT NULL,

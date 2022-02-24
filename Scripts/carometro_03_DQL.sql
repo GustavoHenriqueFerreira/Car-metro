@@ -15,3 +15,6 @@ GO
 
 SELECT * FROM aluno;
 GO
+
+SELECT * FROM fotoAluno
+GO
