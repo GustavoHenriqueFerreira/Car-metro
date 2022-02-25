@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap%27');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F2E2B7;
+    font-family: Titillium Web;
+}
+header{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-header {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo-header{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-header img{
+    height: 210px;
+    width: auto;
+}
+
+.logout-header{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: right;
+    align-items: center;
+}
+
+.logout-header img{
+    height: 50px;
+    width: auto;
+}
+
+.container_alunos{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #0094E7; */
+}
+
+.box_alunos{
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%;
+    /* background-color: chocolate; */
+}
+
+select{
+    height: 53px;
+    width: 230px;
+    background: linear-gradient(180deg, #0094E7 0%, #0081CA 100%);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 38px;
+}
+
+button{
+    height: 53px;
+    width: 230px;
+    background: linear-gradient(180deg, #0094E7 0%, #0081CA 100%);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 38px;
+}
+
+hr{
+    width: 410px;
+    height: 10px;
+    background: linear-gradient(180deg, #0094E7 0%, #0083CC 100%);
+    border: none;
+}
+
+h1{
+    font-size: 700%;
+    color: #0081CA;
+}
+
+option{
+    color: #0094E7;
+}
+
+.container_alunos{
+    display: flex;
+    flex-direction: row;
+}
+
+.nome_pag{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box_fotos{
+    /* background-color: coral; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.container_fotos{
+    /* background-color: cornflowerblue; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 150px 0px;
+}
+
+
+
