@@ -1,5 +1,6 @@
 ﻿using ProjetoInt.WebApi.Contexts;
 using ProjetoInt.WebApi.Domains;
+using ProjetoInt.WebApi.Interfaces;
 using ProjetoInt.WebApi.Utils;
 using System;
 using System.Collections.Generic;
@@ -8,14 +9,9 @@ using System.Threading.Tasks;
 
 namespace ProjetoInt.WebApi.Repositories
 {
-    public class UsuarioRepository
+    public class UsuarioRepository : IUsuarioRepository
     {
-        private readonly carometroContext ctx;
-
-        public UsuarioRepository(carometroContext appContext)
-        {
-            ctx = appContext;
-        }
+        carometroContext ctx = new carometroContext();
 
         public Usuario Login(string email, string senha)
         {
@@ -46,6 +42,54 @@ namespace ProjetoInt.WebApi.Repositories
                 }
             }
             return null;
+        }
+
+        public void Atualizar(int idUsuario, Usuario UsuarioAtualizado)
+        {
+            Usuario usuarioBusc = BuscarPorId(idUsuario);
+
+            if (UsuarioAtualizado.Nome != null)
+            {
+                usuarioBusc.Nome = UsuarioAtualizado.Nome;
+            }
+            if (UsuarioAtualizado.Senha != null)
+            {
+                usuarioBusc.Senha = UsuarioAtualizado.Senha;
+            }
+            if (UsuarioAtualizado.Email != null)
+            {
+                usuarioBusc.Email = UsuarioAtualizado.Email;
+            }
+
+            ctx.Usuarios.Update(usuarioBusc);
+
+            ctx.SaveChanges();
+        }
+
+        public Usuario BuscarPorId(int idUsuario)
+        {
+            return ctx.Usuarios.FirstOrDefault(ab => ab.IdUsuario == idUsuario);
+        }
+
+        public void Cadastrar(Usuario novoUsuario)
+        {
+            ctx.Usuarios.Add(novoUsuario);
+
+            ctx.SaveChanges();
+        }
+
+        public void Deletar(int idUsuario)
+        {
+            Usuario userBuscado = BuscarPorId(idUsuario);
+
+            ctx.Usuarios.Remove(userBuscado);
+
+            ctx.SaveChanges();
+        }
+
+        public List<Usuario> Listar()
+        {
+            return ctx.Usuarios.ToList();
         }
     }
 }

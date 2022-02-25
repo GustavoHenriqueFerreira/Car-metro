@@ -65,3 +65,4 @@ C:\Users\53976212857.INFOSCS\Desktop\Carometro\BackEnd\ProjetoInt.WebApi\Projeto
 C:\Users\53976212857.INFOSCS\Desktop\Carometro\BackEnd\ProjetoInt.WebApi\ProjetoInt.WebApi\obj\Debug\net5.0\ref\ProjetoInt.WebApi.dll
 C:\Users\53976212857.INFOSCS\Desktop\Carometro\BackEnd\ProjetoInt.WebApi\ProjetoInt.WebApi\obj\Debug\net5.0\ProjetoInt.WebApi.pdb
 C:\Users\53976212857.INFOSCS\Desktop\Carometro\BackEnd\ProjetoInt.WebApi\ProjetoInt.WebApi\obj\Debug\net5.0\ProjetoInt.WebApi.genruntimeconfig.cache
+C:\Users\53976212857.INFOSCS\Desktop\Carometro\BackEnd\ProjetoInt.WebApi\ProjetoInt.WebApi\bin\Debug\net5.0\BCrypt.Net-Next.dll
