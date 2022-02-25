@@ -1,8 +1,8 @@
-import '../../assets/css/teste.css'
+import '../../assets/css/menu.css'
 import { useState, useEffect } from "react";
 import axios from 'axios';
 
-export default function ConsultaPac() {
+export default function ListagemALuno() {
     const [listaAlunos, setListaAlunos] = useState([]);
 
     function buscarAlunos() {
