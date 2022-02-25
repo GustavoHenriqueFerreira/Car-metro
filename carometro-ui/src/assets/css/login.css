@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_login{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.box_login{
+    width: 552px;
+    height: 472px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #0094E7;
+}
+
+.box_input{
+    display: flex;
+    flex-direction: column;
+    height: 275px;
+    justify-content: space-evenly;
+}
+
+.input_login{
+    width: 486px;
+    height: 79px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 36px;
+    border-radius: 20px;
+    border: 7px solid #0094E7;
+    padding: 4%;
+}
+
+.input_login::placeholder {
+    color: #0094E7;
+}
+
+.btn_login{
+    width: 242px;
+    height: 79px;
+    background-color: #0094E7;
+    border-radius: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 45px;
+    color: #FFF;
+    font-weight: bold;
+    border: none;
+}
+
+.box_btn{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+

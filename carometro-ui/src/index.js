@@ -8,15 +8,26 @@ import {
 } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
-import ListagemAlunos from './pages/listagemAlunos/ListagemAlunos';
+import Cadastro from './pages/cadastro/Cadastro';
+import ListagemAluno from './pages/listagemAluno/ListagemAluno';
+import Login from './pages/login/Login';
+import Menu from './pages/menu/Menu';
+import PerfilAluno from './pages/perfilAluno/PerfilAluno';
+import Verificacao from './pages/verificacao/Verificacao';
+import Turma from './pages/turma/Turma';
 import NotFound from './pages/notFound/NotFound'
 
 const routing = (
   <Router>
     <div>
       <Switch>
-        {/* <Route path="/login" component={Login}/> {/* Login */}
-        <Route exact path="/" component={ListagemAlunos} /> {/* Home */}
+        <Route exact path="/listagem" component={ListagemAluno} /> {/* Home */}
+        <Route exact path="/cadastro" component={Cadastro} /> {/* Cadastro de usuários e alunos */}
+        <Route path="/" component={Login}/> {/* Login */}
+        <Route exact path="/menu" component={Menu} /> {/* Menu com os 3 tipos de ensino */}
+        <Route exact path="/perfilAluno" component={PerfilAluno} /> {/* Perfil do aluno */}
+        <Route exact path="/verficacao" component={Verificacao} /> {/* Verificação da foto do aluno */}
+        <Route exact path="/turmas" component={Turma} /> {/* Todas as turmas cadastradas */}
         <Route path="/notFound" component={NotFound} /> {/* Not Found */}
         <Redirect to="/notFound" /> {/* Redireciona para Not Found caso não encontre nenhuma rota */}
       </Switch>
