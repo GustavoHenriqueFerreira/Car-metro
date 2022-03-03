@@ -73,11 +73,8 @@ export default function CadastroAluno() {
                                     <option className='option_turma' value="">Turma</option> <option className='option_turma' value="">EM 3°A</option> <option className='option_turma' value="">EM 3°B</option> <option className='option_turma' value="">EM 3°C</option>
                                 </select>
 
-                                <input className="select_turma"
-                                    name="arquivo"
-                                    type="file"
-                                    placeholder="Escolher arquivo">
-                                </input>
+                                <label for="arquivo">Escolher arquivo</label>
+                                <input className="select_turma" type="file" name="arquivo" id="arquivo"></input>
                             </div>
 
                             <div class="box_btn_aluno">
