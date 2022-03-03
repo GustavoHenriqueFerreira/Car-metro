@@ -8,26 +8,28 @@ import {
 } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
-import Cadastro from './pages/cadastro/Cadastro';
 import ListagemAluno from './pages/listagemAluno/ListagemAluno';
 import Login from './pages/login/Login';
 import Menu from './pages/menu/Menu';
 import PerfilAluno from './pages/perfilAluno/PerfilAluno';
+import CadastroProfessor from './pages/cadastro/CadastroProfessor';
+import CadastroAluno from './pages/cadastro/CadastroAluno';
 import Verificacao from './pages/verificacao/Verificacao';
-import Turma from './pages/turma/Turma';
-import NotFound from './pages/notFound/NotFound'
+/* import Turma from './pages/turma/Turma'; */
+import NotFound from './pages/notFound/NotFound';
 
 const routing = (
   <Router>
     <div>
       <Switch>
         <Route exact path="/listagem" component={ListagemAluno} /> {/* Home */}
-        <Route exact path="/cadastro" component={Cadastro} /> {/* Cadastro de usuários e alunos */}
-        <Route path="/" component={Login}/> {/* Login */}
         <Route exact path="/menu" component={Menu} /> {/* Menu com os 3 tipos de ensino */}
-        <Route exact path="/perfilAluno" component={PerfilAluno} /> {/* Perfil do aluno */}
-        <Route exact path="/verficacao" component={Verificacao} /> {/* Verificação da foto do aluno */}
-        <Route exact path="/turmas" component={Turma} /> {/* Todas as turmas cadastradas */}
+        <Route exact path="/perfil" component={PerfilAluno} /> {/* Perfil do aluno */}
+        <Route exact path="/cadastroAluno" component={CadastroAluno} /> {/* Cadastro de alunos */}
+        <Route exact path="/cadastroProfessor" component={CadastroProfessor} /> {/* Cadastro de professores */}
+        <Route exact path="/verificacao" component={Verificacao} /> {/* Verificação da foto do aluno */}
+        {/* <Route exact path="/turmas" component={Turma} /> {/* Todas as turmas cadastradas */}
+        <Route path="/" component={Login}/> {/* Login */}
         <Route path="/notFound" component={NotFound} /> {/* Not Found */}
         <Redirect to="/notFound" /> {/* Redireciona para Not Found caso não encontre nenhuma rota */}
       </Switch>

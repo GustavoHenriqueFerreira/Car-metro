@@ -4,13 +4,14 @@ import '../../assets/css/headerFooter.css';
 export default function Rodape() {
 
     return (
-        <footer>
-            <section class="container-footer">
-                <span>Serviços
-                </span>
-                <span style="font-weight: 700;">Copyright © 2022 - SoneDev</span>
-                <span>Contatar</span>
-            </section>
-        </footer>
+        <div className='rodape'>
+            <footer>
+                <section class="container-footer">
+                    <span>Serviços</span>
+                    <span className='copyright'>Copyright © 2022 - SoneDev</span>
+                    <span>Contatar</span>
+                </section>
+            </footer>
+        </div>
     )
 }

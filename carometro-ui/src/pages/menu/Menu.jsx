@@ -1,3 +1,4 @@
+import '../../assets/css/menu.css'
 import Cabecalho from "../../components/cabecalho/cabecalho";
 import Rodape from "../../components/rodape/rodape";
 
@@ -6,22 +7,24 @@ export default function Menu() {
         <div>
             <Cabecalho />
 
-            <h1>Menu</h1>
-            <div class="linha-menu"></div>
+            <main className='main_menu'>
+                <h1 className='menu'>Menu</h1>
+                <div className="linha-menu"></div>
 
-            <section class="menu-grades">
+                <section className="menu-grades">
 
-                <button class="grade1">
-                    <p class="texto-grade">EM</p>
-                </button>
-                <button class="grade2">
-                    <p class="texto-grade">EF I</p>
-                </button>
-                <button class="grade3">
-                    <p class="texto-grade">EF II</p>
-                </button>
+                    <button className="grade1">
+                        <p className="texto-grade">EM</p>
+                    </button>
+                    <button className="grade2">
+                        <p className="texto-grade">EF I</p>
+                    </button>
+                    <button className="grade3">
+                        <p className="texto-grade">EF II</p>
+                    </button>
 
-            </section>
+                </section>
+            </main>
 
             <Rodape />
         </div>

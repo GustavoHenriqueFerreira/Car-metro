@@ -1,38 +1,46 @@
 import '../../assets/css/login.css'
-import logo from '../../assets/img/logo.png';
-import undraw from '../../assets/img/undraw.png'
+import logo from '../../assets/img/logo 2.png';
+import undraw from '../../assets/img/undraw_education_f8ru 1.png';
+import Cabecalho from '../../components/cabecalho/cabecalho';
+import Rodape from '../../components/rodape/rodape';
 
 export default function Login() {
     return (
         <div>
             <div className="container_login">
-                <div>
-                    <img width="500px" scr={logo} />
-                    <img width="500px" scr={undraw}/>
+                <div className='background'>
+                    <img className="undraw" src={undraw} alt=""></img>
                 </div>
-                <div className="box_login">
-                    <form className="">
 
-                        <div className="box_input">
-                            <input className="input_login"
-                                name="email"
-                                type="text"
-                                placeholder="Email">
-                            </input>
+                <div className='logar'>
+                    <div>
+                        <img className="logo" src={logo} alt="" />
+                    </div>
 
-                            <input className="input_login"
-                                name="senha"
-                                type="password"
-                                placeholder="Senha">
-                            </input>
-                        </div>
+                    <div className="box_login">
+                        <form className="">
 
-                        <div class="box_btn">
-                            <button type="button" class="btn_login">Login</button>
-                        </div>
-                    </form>
+                            <div className="box_input">
+                                <input className="input_login"
+                                    name="email"
+                                    type="email"
+                                    placeholder="Email">
+                                </input>
+
+                                <input className="input_login"
+                                    name="senha"
+                                    type="password"
+                                    placeholder="Senha">
+                                </input>
+                            </div>
+
+                            <div class="box_btn">
+                                <button type="button" class="btn_login">Login</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }

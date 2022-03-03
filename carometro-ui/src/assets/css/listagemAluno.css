@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap%27');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_alunos{
+    background-color: #F2E2B7;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.container_alunos{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #0094E7; */
+}
+
+.box_alunos{
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%;
+    /* background-color: chocolate; */
+}
+
+.select_alunos{
+    height: 53px;
+    width: 230px;
+    background: linear-gradient(180deg, #0094E7 0%, #0081CA 100%);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 38px;
+}
+
+.btn_cadastrar{
+    height: 53px;
+    width: 230px;
+    background: linear-gradient(180deg, #0094E7 0%, #0081CA 100%);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 38px;
+}
+
+.linha_alunos{
+    width: 410px;
+    height: 10px;
+    background: linear-gradient(180deg, #0094E7 0%, #0083CC 100%);
+    border: none;
+}
+
+.titulo_alunos{
+    font-size: 700%;
+    color: #0081CA;
+}
+
+.option_turma{
+    color: #0094E7;
+}
+
+.container_alunos{
+    display: flex;
+    flex-direction: row;
+}
+
+.nome_pag{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box_fotos{
+    /* background-color: coral; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.container_fotos{
+    /* background-color: cornflowerblue; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 150px 0px;
+}

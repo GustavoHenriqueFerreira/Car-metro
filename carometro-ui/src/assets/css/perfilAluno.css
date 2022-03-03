@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_perfil{
+    background-color: rgba(242, 226, 183, 1);
+}
+
+.container_aluno{
+    width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.espacamento_perfil{
+    display: flex;
+    flex-direction: column;
+    height: 950px;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo_aluno{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 97px;
+    font-weight: bold;
+    color: #0094E7;
+    border-bottom: 9px solid #0094E7;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.perfil_aluno{
+    border: 7px solid #0094E7;
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.foto{
+    border: 22px solid #0094E7;
+    height: fit-content;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.info_aluno{
+    width: 499px;
+    height: 495px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.88);
+    border-radius: 30px;
+    padding: 0% 2% 5% 3%;
+}
+
+.info_aluno span{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 22px;
+    color: #0094E7;
+    /* background-color: rgba(255, 255, 255, 0.88);
+    background-color: rgba(0, 0, 0, 0%);*/
+}
