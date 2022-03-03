@@ -1,6 +1,7 @@
 import '../../assets/css/turma.css'
 import Cabecalho from '../../components/cabecalho/cabecalho';
 import Rodape from '../../components/rodape/rodape';
+import { Link } from 'react-router-dom';
 import { useState, useEffect } from "react";
 import axios from 'axios';
 
@@ -14,21 +15,21 @@ export default function Turma_EFI() {
                 <div class="linha-menu"></div>
                 
                 <section class="menu-series">
-                    <button class="serie-EFI">
+                    <Link to="/listagem" class="serie-EFI">
                         1°
-                    </button>
-                    <button class="serie-EFI">
+                    </Link>
+                    <Link to="/listagem" class="serie-EFI">
                         2°
-                    </button>
-                    <button class="serie-EFI">
+                    </Link>
+                    <Link to="/listagem" class="serie-EFI">
                         3°
-                    </button>
-                    <button class="serie-EFI">
+                    </Link>
+                    <Link to="/listagem" class="serie-EFI">
                         4°
-                    </button>
-                    <button class="serie-EFI">
+                    </Link>
+                    <Link to="/listagem" class="serie-EFI">
                         5°
-                    </button>
+                    </Link>
                 </section>
             </main>
 

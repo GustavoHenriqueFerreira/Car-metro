@@ -4,6 +4,7 @@ import Cabecalho from '../../components/cabecalho/cabecalho';
 import Rodape from '../../components/rodape/rodape';
 import { useState, useEffect } from "react";
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 export default function ListagemALuno() {
     /* const [listaAlunos, setListaAlunos] = useState([]);
@@ -43,14 +44,14 @@ export default function ListagemALuno() {
                                     <h1 className='titulo_alunos'>Alunos</h1>
                                     <hr className='linha_alunos' />
                                 </div>
-                                <button className='btn_cadastrar'>Cadastrar</button>
+                                <Link to="/cadastroAluno" className='btn_cadastrar'>Cadastrar</Link>
                             </div>
                         </div>
                     </section>
                     <section>
                         <div className="container_fotos">
                             <div className="box_fotos">
-                                <div className="espaco-aluno">
+                                <Link to="/perfil" className="espaco-aluno">
                                     <div className="div-fotoaluno">
                                         <img className="foto_aluno" src={foto_aluno} alt="" />
                                     </div>
@@ -58,8 +59,8 @@ export default function ListagemALuno() {
                                     <div className='container_nomeAluno'>
                                         <p className="nome_aluno">Gustavo Henrique</p>
                                     </div>
-                                </div>
-                                <div className="espaco-aluno">
+                                </Link>
+                                <Link to="/perfil" className="espaco-aluno">
                                     <div className="div-fotoaluno">
                                         <img className="foto_aluno" src={foto_aluno} alt="" />
                                     </div>
@@ -67,8 +68,8 @@ export default function ListagemALuno() {
                                     <div className='container_nomeAluno'>
                                         <p className="nome_aluno">Gustavo Henrique</p>
                                     </div>
-                                </div>
-                                <div className="espaco-aluno">
+                                </Link>
+                                <Link to="/perfil" className="espaco-aluno">
                                     <div className="div-fotoaluno">
                                         <img className="foto_aluno" src={foto_aluno} alt="" />
                                     </div>
@@ -76,8 +77,8 @@ export default function ListagemALuno() {
                                     <div className='container_nomeAluno'>
                                         <p className="nome_aluno">Gustavo Henrique</p>
                                     </div>
-                                </div>
-                                <div className="espaco-aluno">
+                                </Link>
+                                <Link to="/perfil" className="espaco-aluno">
                                     <div className="div-fotoaluno">
                                         <img className="foto_aluno" src={foto_aluno} alt="" />
                                     </div>
@@ -85,8 +86,8 @@ export default function ListagemALuno() {
                                     <div className='container_nomeAluno'>
                                         <p className="nome_aluno">Gustavo Henrique</p>
                                     </div>
-                                </div>
-                                <div className="espaco-aluno">
+                                </Link>
+                                <Link to="/perfil" className="espaco-aluno">
                                     <div className="div-fotoaluno">
                                         <img className="foto_aluno" src={foto_aluno} alt="" />
                                     </div>
@@ -94,8 +95,8 @@ export default function ListagemALuno() {
                                     <div className='container_nomeAluno'>
                                         <p className="nome_aluno">Gustavo Henrique</p>
                                     </div>
-                                </div>
-                                <div className="espaco-aluno">
+                                </Link>
+                                <Link to="/perfil" className="espaco-aluno">
                                     <div className="div-fotoaluno">
                                         <img className="foto_aluno" src={foto_aluno} alt="" />
                                     </div>
@@ -103,8 +104,8 @@ export default function ListagemALuno() {
                                     <div className='container_nomeAluno'>
                                         <p className="nome_aluno">Gustavo Henrique</p>
                                     </div>
-                                </div>
-                                <div className="espaco-aluno">
+                                </Link>
+                                <Link to="/perfil" className="espaco-aluno">
                                     <div className="div-fotoaluno">
                                         <img className="foto_aluno" src={foto_aluno} alt="" />
                                     </div>
@@ -112,7 +113,7 @@ export default function ListagemALuno() {
                                     <div className='container_nomeAluno'>
                                         <p className="nome_aluno">Gustavo Henrique</p>
                                     </div>
-                                </div>
+                                </Link>
                             </div>
                         </div>
                     </section>
