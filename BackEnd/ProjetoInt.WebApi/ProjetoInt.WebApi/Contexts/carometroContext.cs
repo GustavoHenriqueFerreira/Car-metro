@@ -29,8 +29,11 @@ namespace ProjetoInt.WebApi.Contexts
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=NOTE0113D2\\SQLEXPRESS; initial catalog=CAROMETRO; user Id=sa; pwd=Senai@132;");
+                //optionsBuilder.UseSqlServer("Data Source=NOTE0113D2\\SQLEXPRESS; initial catalog=CAROMETRO; user Id=sa; pwd=Senai@132;");
+                // Chave do Rezende
+                optionsBuilder.UseSqlServer("Data Source=NOTE0113H1\\SQLEXPRESS; initial catalog=CAROMETRO; user Id=sa; pwd=Senai@132;");
             }
+          
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\53976212857.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj": {}
+    "C:\\Users\\46849723804.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\53976212857.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj": {
+    "C:\\Users\\46849723804.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\53976212857.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\46849723804.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj",
         "projectName": "ProjetoInt.WebApi",
-        "projectPath": "C:\\Users\\53976212857.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj",
-        "packagesPath": "C:\\Users\\53976212857.INFOSCS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\53976212857.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\obj\\",
+        "projectPath": "C:\\Users\\46849723804.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj",
+        "packagesPath": "C:\\Users\\46849723804.INFOSCS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\46849723804.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\53976212857.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\46849723804.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -51,6 +51,10 @@
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
               "version": "[5.0.14, )"
+            },
+            "Microsoft.Azure.CognitiveServices.Vision.Face": {
+              "target": "Package",
+              "version": "[2.8.0-preview.2, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -97,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
