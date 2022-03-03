@@ -12,7 +12,7 @@ namespace ProjetoInt.WebApi.Domains
             Turmas = new HashSet<Turma>();
         }
 
-        public short IdGrade { get; set; }
+        public int IdGrade { get; set; }
         public string NomeGrade { get; set; }
 
         public virtual ICollection<Turma> Turmas { get; set; }

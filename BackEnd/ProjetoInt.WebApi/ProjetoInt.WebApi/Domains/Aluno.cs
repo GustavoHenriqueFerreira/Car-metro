@@ -8,7 +8,7 @@ namespace ProjetoInt.WebApi.Domains
     public partial class Aluno
     {
         public int IdAluno { get; set; }
-        public short? IdTurma { get; set; }
+        public int? IdTurma { get; set; }
         public string NomeAluno { get; set; }
         public string RgAluno { get; set; }
         public string TelefoneAluno { get; set; }

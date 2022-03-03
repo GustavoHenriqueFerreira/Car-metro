@@ -12,8 +12,8 @@ namespace ProjetoInt.WebApi.Domains
             Alunos = new HashSet<Aluno>();
         }
 
-        public short IdTurma { get; set; }
-        public short? IdGrade { get; set; }
+        public int IdTurma { get; set; }
+        public int? IdGrade { get; set; }
         public string NomeTurma { get; set; }
         public string TurnoTurma { get; set; }
 
