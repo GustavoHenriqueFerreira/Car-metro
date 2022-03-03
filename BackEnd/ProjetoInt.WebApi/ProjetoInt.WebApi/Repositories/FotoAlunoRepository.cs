@@ -89,6 +89,21 @@ namespace ProjetoInt.WebApi.Repositories
             ctx.SaveChanges();
         }
 
+
+        public string ConsultarPerfilBD(int idUsuario)
+        {
+            FotoAluno FotoAluno = new FotoAluno();
+
+            FotoAluno = ctx.FotoAlunos.FirstOrDefault(i => i.IdAluno == idUsuario);
+
+            if (FotoAluno != null)
+            {
+                return Convert.ToBase64String(FotoAluno.Binario);
+            }
+
+            return null;
+        }
+
         public List<FotoAluno> Listar()
         {
             return ctx.FotoAlunos.ToList();

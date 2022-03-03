@@ -44,6 +44,19 @@ namespace ProjetoInt.WebApi.Controllers
             return Ok(AlunoPesquisado);
         }
 
+        [HttpGet("{id}")]
+        public IActionResult ListarPorTurma(int idTurma)
+        {
+            Aluno AlunoPesquisado = _AlunoRepository.BuscarPorTurma(idTurma);
+
+            if (AlunoPesquisado == null)
+            {
+                return NotFound("Nenhum Aluno encontrado!");
+            }
+
+            return Ok(AlunoPesquisado);
+        }
+
         [HttpPost]
         public IActionResult Post(Aluno novoAluno)
         {

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\caio0\\OneDrive\\Área de Trabalho\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj": {}
+    "C:\\Users\\53976212857.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\caio0\\OneDrive\\Área de Trabalho\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj": {
+    "C:\\Users\\53976212857.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\caio0\\OneDrive\\Área de Trabalho\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\53976212857.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj",
         "projectName": "ProjetoInt.WebApi",
-        "projectPath": "C:\\Users\\caio0\\OneDrive\\Área de Trabalho\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj",
-        "packagesPath": "C:\\Users\\caio0\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\caio0\\OneDrive\\Área de Trabalho\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\obj\\",
+        "projectPath": "C:\\Users\\53976212857.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj",
+        "packagesPath": "C:\\Users\\53976212857.INFOSCS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\53976212857.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\caio0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\53976212857.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
