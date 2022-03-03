@@ -50,8 +50,8 @@ export default function ListagemALuno() {
                     <section>
                         <div className="container_fotos">
                             <div className="box_fotos">
-                                <div>
-                                    <div>
+                                <div className="espaco-aluno">
+                                    <div className="div-fotoaluno">
                                         <img className="foto_aluno" src={foto_aluno} alt="" />
                                     </div>
 
@@ -59,34 +59,58 @@ export default function ListagemALuno() {
                                         <p className="nome_aluno">Gustavo Henrique</p>
                                     </div>
                                 </div>
-
-                                <div>
-                                    <div>
+                                <div className="espaco-aluno">
+                                    <div className="div-fotoaluno">
                                         <img className="foto_aluno" src={foto_aluno} alt="" />
                                     </div>
-                                    
+
                                     <div className='container_nomeAluno'>
-                                        <p className="nome_aluno">Gustavo Rezende</p>
+                                        <p className="nome_aluno">Gustavo Henrique</p>
                                     </div>
                                 </div>
-
-                                <div>
-                                    <div>
+                                <div className="espaco-aluno">
+                                    <div className="div-fotoaluno">
                                         <img className="foto_aluno" src={foto_aluno} alt="" />
                                     </div>
 
                                     <div className='container_nomeAluno'>
-                                        <p className="nome_aluno">Vinicius Viana</p>
+                                        <p className="nome_aluno">Gustavo Henrique</p>
                                     </div>
                                 </div>
-
-                                <div>
-                                    <div>
+                                <div className="espaco-aluno">
+                                    <div className="div-fotoaluno">
                                         <img className="foto_aluno" src={foto_aluno} alt="" />
                                     </div>
 
                                     <div className='container_nomeAluno'>
-                                        <p className="nome_aluno">Luca Figliola</p>
+                                        <p className="nome_aluno">Gustavo Henrique</p>
+                                    </div>
+                                </div>
+                                <div className="espaco-aluno">
+                                    <div className="div-fotoaluno">
+                                        <img className="foto_aluno" src={foto_aluno} alt="" />
+                                    </div>
+
+                                    <div className='container_nomeAluno'>
+                                        <p className="nome_aluno">Gustavo Henrique</p>
+                                    </div>
+                                </div>
+                                <div className="espaco-aluno">
+                                    <div className="div-fotoaluno">
+                                        <img className="foto_aluno" src={foto_aluno} alt="" />
+                                    </div>
+
+                                    <div className='container_nomeAluno'>
+                                        <p className="nome_aluno">Gustavo Henrique</p>
+                                    </div>
+                                </div>
+                                <div className="espaco-aluno">
+                                    <div className="div-fotoaluno">
+                                        <img className="foto_aluno" src={foto_aluno} alt="" />
+                                    </div>
+
+                                    <div className='container_nomeAluno'>
+                                        <p className="nome_aluno">Gustavo Henrique</p>
                                     </div>
                                 </div>
                             </div>

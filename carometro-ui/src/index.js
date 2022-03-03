@@ -9,7 +9,7 @@ import {
 import reportWebVitals from './reportWebVitals';
 
 import ListagemAluno from './pages/listagemAluno/ListagemAluno';
-import Login from './pages/login/Login';
+import Login from './pages/Login/Login';
 import Menu from './pages/menu/Menu';
 import PerfilAluno from './pages/perfilAluno/PerfilAluno';
 import CadastroProfessor from './pages/cadastro/CadastroProfessor';
