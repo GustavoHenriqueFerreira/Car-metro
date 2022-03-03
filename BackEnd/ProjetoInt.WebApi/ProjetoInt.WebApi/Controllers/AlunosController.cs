@@ -13,63 +13,63 @@ namespace ProjetoInt.WebApi.Controllers
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuariosController : ControllerBase
+    public class AlunosController : ControllerBase
     {
-        private IUsuarioRepository _UsuarioRepository { get; set; }
+        private IAlunoRepository _AlunoRepository { get; set; }
 
-        public UsuariosController()
+        public AlunosController()
         {
 
-            _UsuarioRepository = new UsuarioRepository();
+            _AlunoRepository = new AlunoRepository();
         }
 
         [HttpGet]
         public IActionResult get()
         {
-            List<Usuario> ListaUsuarios = _UsuarioRepository.Listar();
+            List<Aluno> ListaAlunos = _AlunoRepository.Listar();
 
-            return Ok(ListaUsuarios);
+            return Ok(ListaAlunos);
         }
 
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
-            Usuario UsuarioPesquisado = _UsuarioRepository.BuscarPorId(id);
+            Aluno AlunoPesquisado = _AlunoRepository.BuscarPorId(id);
 
-            if (UsuarioPesquisado == null)
+            if (AlunoPesquisado == null)
             {
-                return NotFound("Nenhum Usuario encontrado!");
+                return NotFound("Nenhum Aluno encontrado!");
             }
 
-            return Ok(UsuarioPesquisado);
+            return Ok(AlunoPesquisado);
         }
 
         [HttpPost]
-        public IActionResult Post(Usuario novoUsuario)
+        public IActionResult Post(Aluno novoAluno)
         {
-            _UsuarioRepository.Cadastrar(novoUsuario);
+            _AlunoRepository.Cadastrar(novoAluno);
 
             return StatusCode(201);
         }
 
         [HttpPut("{id}")]
-        public IActionResult atualizar(int id, Usuario UsuarioAtualizado)
+        public IActionResult PutUrl(int id, Aluno AlunoAtualizado)
         {
-            Usuario UsuarioBuscado = _UsuarioRepository.BuscarPorId(id);
+            Aluno AlunoBuscado = _AlunoRepository.BuscarPorId(id);
 
-            if (UsuarioBuscado == null)
+            if (AlunoBuscado == null)
             {
                 return NotFound
                     (new
                     {
-                        mensagem = "Usuario não encontrado!",
+                        mensagem = "Aluno não encontrado!",
                         erro = true
                     });
             }
 
             try
             {
-                _UsuarioRepository.Atualizar(id, UsuarioAtualizado);
+                _AlunoRepository.Atualizar(id, AlunoAtualizado);
 
                 return NoContent();
             }
@@ -82,7 +82,7 @@ namespace ProjetoInt.WebApi.Controllers
         [HttpDelete("excluir/{id}")]
         public IActionResult Delete(int id)
         {
-            _UsuarioRepository.Deletar(id);
+            _AlunoRepository.Deletar(id);
 
             return StatusCode(204);
         }

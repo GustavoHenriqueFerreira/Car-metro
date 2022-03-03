@@ -1,11 +1,21 @@
-﻿using System;
+﻿using ProjetoInt.WebApi.Domains;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace ProjetoInt.WebApi.Interfaces
 {
-    public class IAlunoRepository
+    public interface IAlunoRepository
     {
+        void Atualizar(int id, Aluno Aluno);
+
+        Aluno BuscarPorId(int idAluno);
+
+        void Cadastrar(Aluno novoAluno);
+
+        void Deletar(int idAluno);
+
+        List<Aluno> Listar();
     }
 }
