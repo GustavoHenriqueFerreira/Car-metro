@@ -37,7 +37,7 @@ export default function CadastroAluno() {
                                     placeholder="RG">
                                 </input>
 
-                                <input className="input_aluno"
+                                <input className="input_aluno cor_datetime"
                                     name="data da matricula"
                                     type="date"
                                     placeholder="Data da Matrícula">

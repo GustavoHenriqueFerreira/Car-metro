@@ -15,7 +15,9 @@ import PerfilAluno from './pages/perfilAluno/PerfilAluno';
 import CadastroProfessor from './pages/cadastro/CadastroProfessor';
 import CadastroAluno from './pages/cadastro/CadastroAluno';
 import Verificacao from './pages/verificacao/Verificacao';
-/* import Turma from './pages/turma/Turma'; */
+import Turma_EM from './pages/turma/Turma_EM';
+import Turma_EFI from './pages/turma/Turma_EFI';
+import Turma_EFII from './pages/turma/Turma_EFII';
 import NotFound from './pages/notFound/NotFound';
 
 const routing = (
@@ -28,7 +30,9 @@ const routing = (
         <Route exact path="/cadastroAluno" component={CadastroAluno} /> {/* Cadastro de alunos */}
         <Route exact path="/cadastroProfessor" component={CadastroProfessor} /> {/* Cadastro de professores */}
         <Route exact path="/verificacao" component={Verificacao} /> {/* Verificação da foto do aluno */}
-        {/* <Route exact path="/turmas" component={Turma} /> {/* Todas as turmas cadastradas */}
+        <Route exact path="/turma_EM" component={Turma_EM} /> {/* Turmas do ensino médio */}
+        <Route exact path="/turma_EFI" component={Turma_EFI} /> {/* Turmas do ensino fundamental I */}
+        <Route exact path="/turma_EFII" component={Turma_EFII} /> {/* Turmas do ensino fundamental II */}
         <Route path="/" component={Login}/> {/* Login */}
         <Route path="/notFound" component={NotFound} /> {/* Not Found */}
         <Redirect to="/notFound" /> {/* Redireciona para Not Found caso não encontre nenhuma rota */}

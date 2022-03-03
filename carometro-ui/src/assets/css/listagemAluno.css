@@ -89,5 +89,20 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 150px 0px;
+    align-items: center;
+    height: 600px;
+}
+
+.foto_aluno{
+    background: #0094E7;
+}
+
+.nome_aluno{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 28px;
+    color: #5E5E5E;
+}
+
+.container_nomeAluno{
+    background: linear-gradient(180deg, #FFFFFF 55.52%, #CCCCCC 100%);
 }

@@ -49,6 +49,7 @@
     border-radius: 20px;
     border: 7px solid #0094E7;
     padding: 4%;
+    color: #0094E7;
 }
 
 .input_login::placeholder {
