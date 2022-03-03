@@ -3,6 +3,7 @@ import Cabecalho from '../../components/cabecalho/cabecalho';
 import Rodape from '../../components/rodape/rodape';
 import { useState, useEffect } from "react";
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 export default function Turma_EM() {
     return (
@@ -14,15 +15,15 @@ export default function Turma_EM() {
                 <div class="linha-menu"></div>
                 
                 <section class="menu-series">
-                    <button class="serie-EM">
+                    <Link to="/listagem" class="serie-EM">
                         1°
-                    </button>
-                    <button class="serie-EM">
+                    </Link>
+                    <Link to="/listagem" class="serie-EM">
                         2°
-                    </button>
-                    <button class="serie-EM">
+                    </Link>
+                    <Link to="/listagem" class="serie-EM">
                         3°
-                    </button>
+                    </Link>
                 </section>
             </main>
 

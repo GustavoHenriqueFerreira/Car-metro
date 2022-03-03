@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../../assets/css/menu.css'
 import Cabecalho from "../../components/cabecalho/cabecalho";
 import Rodape from "../../components/rodape/rodape";
@@ -13,15 +14,15 @@ export default function Menu() {
 
                 <section className="menu-grades">
 
-                    <button className="grade1">
+                    <Link to="/turma_EM" className="grade1">
                         <p className="texto-grade">EM</p>
-                    </button>
-                    <button className="grade2">
+                    </Link>
+                    <Link to="/turma_EFI" className="grade2">
                         <p className="texto-grade">EF I</p>
-                    </button>
-                    <button className="grade3">
+                    </Link>
+                    <Link to="/turma_EFII" className="grade3">
                         <p className="texto-grade">EF II</p>
-                    </button>
+                    </Link>
 
                 </section>
             </main>

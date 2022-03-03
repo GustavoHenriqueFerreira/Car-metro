@@ -47,6 +47,10 @@
     border: none;
     color: white;
     font-size: 38px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .linha_alunos{
@@ -97,6 +101,7 @@
     background: rgba(0, 148, 231, 1);
     height: 330px;
     border-radius: 12px;
+    text-decoration: none;
 }
 
 .div-fotoaluno {
