@@ -57,28 +57,6 @@ export default class Login extends Component {
                         this.props.history.push('/menu');
                         console.log('estou logado: ' + usuarioAutenticado())
                     }
-
-                    /* switch (parseJwt().role) {
-                        case '1':
-                            this.props.history.push('/consultasAdm');
-                            console.log(usuarioAutenticado())
-                            break;
-
-                        case '2':
-                            this.props.history.push('/');
-                            console.log(usuarioAutenticado())
-                            break;
-
-                        case '3':
-                            this.props.history.push('/consultasMed');
-                            console.log(usuarioAutenticado())
-                            break;
-
-                        default:
-                            this.props.history.push('/');
-                            console.log(usuarioAutenticado())
-                            break;
-                    } */
                 }
             })
 
