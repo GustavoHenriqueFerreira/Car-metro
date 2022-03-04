@@ -49,7 +49,12 @@ export default class Login extends Component {
                     console.log(base64);
 
                     if (parseJwt().role === '1' ) {
-                        this.props.history.push('/');
+                        this.props.history.push('/menu');
+                        console.log('estou logado: ' + usuarioAutenticado())
+                    }
+
+                    if (parseJwt().role === '2' ) {
+                        this.props.history.push('/menu');
                         console.log('estou logado: ' + usuarioAutenticado())
                     }
 
@@ -103,7 +108,7 @@ export default class Login extends Component {
                         </div>
 
                         <div className="box_login">
-                            <form className="" onSubmit={this.efetuaLogin}>
+                            <form onSubmit={this.efetuaLogin}>
 
                                 <div className="box_input">
                                     <input className="input_login"
@@ -123,8 +128,8 @@ export default class Login extends Component {
                                     </input>
                                 </div>
 
-                                <div class="box_btn">
-                                    <button type="submit" class="btn_login">Login</button>
+                                <div className="box_btn">
+                                    <button type="submit" className="btn_login">Login</button>
                                 </div>
                             </form>
                         </div>

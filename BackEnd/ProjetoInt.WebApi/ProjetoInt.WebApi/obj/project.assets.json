@@ -7587,19 +7587,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\42410863817.INFOSCS\\.nuget\\packages\\": {}
+    "C:\\Users\\AMD\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\42410863817.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\AMD\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj",
       "projectName": "ProjetoInt.WebApi",
-      "projectPath": "C:\\Users\\42410863817.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj",
-      "packagesPath": "C:\\Users\\42410863817.INFOSCS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\42410863817.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\obj\\",
+      "projectPath": "C:\\Users\\AMD\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj",
+      "packagesPath": "C:\\Users\\AMD\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\AMD\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\42410863817.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\AMD\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7682,7 +7682,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
       }
     }
   }

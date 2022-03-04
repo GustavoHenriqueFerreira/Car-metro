@@ -29,7 +29,8 @@ namespace ProjetoInt.WebApi.Contexts
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=NOTE0113C5\\SQLEXPRESS; initial catalog=CAROMETRO; user Id=sa; pwd=Senai@132;");
+                optionsBuilder.UseSqlServer("Data Source=DESKTOP-E81EO80\\SQLEXPRESS; initial catalog=CAROMETRO;Trusted_Connection = True;");
+                //optionsBuilder.UseSqlServer("Data Source=NOTE0113C5\\SQLEXPRESS; initial catalog=CAROMETRO; user Id=sa; pwd=Senai@132;");
             }
         }
 
