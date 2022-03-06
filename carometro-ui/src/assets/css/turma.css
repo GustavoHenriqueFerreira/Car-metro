@@ -100,3 +100,11 @@
     letter-spacing: -15px;
     text-decoration: none;
 }
+
+.serie-EF{
+    width: 251px;
+    height: 219px;
+    background: linear-gradient(180deg, #0094E7 0%, #0082CB 100%);
+    border: 15px solid rgba(255, 255, 255, 1);
+    border-radius: 30px;
+}

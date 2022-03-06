@@ -9,6 +9,7 @@ import foto_aluno from '../../assets/img/foto_aluno.png'
 
 export default function Turma_EFI() {
     const [listaAlunos, setListaAlunos] = useState([]);
+    const [listaTurmas, setListaTurmas] = useState([]);
     const [idTurma, setIdTurma] = useState([]);
 
     function buscarAlunos() {
@@ -25,7 +26,23 @@ export default function Turma_EFI() {
             .catch(erro => console.log(erro))
     }
 
-    useEffect(buscarAlunos, [])
+    function buscarTurmas() {
+        console.log('Realizando a chamada para a API')
+        axios('http://localhost:5000/api/Turma', {
+            headers: {
+                'Authorization': 'Bearer ' + localStorage.getItem('usuario-login')
+            }
+        }).then(response => {
+            if (response.status === 200) {
+                setListaTurmas(response.data)
+            }
+        })
+            .catch(erro => console.log(erro))
+    }
+
+    useEffect(buscarAlunos, buscarTurmas, [])
+
+    console.log(idTurma);
 
     return (
         <div>
@@ -36,40 +53,37 @@ export default function Turma_EFI() {
                 <div class="linha-menu"></div>
 
                 <section class="menu-series">
-                    
-                        <button 
-                        value={idTurma} 
-                        onClick={(campo) => setIdTurma(campo.target.value === 1)} 
-                        className="serie-EFI">
-                            1°
-                        </button>
+                    <div className='serie-EF'>
+                        {
+                            listaTurmas.map((turma) => {
+                                return (
+                                    console.log('cheguei aqui'),
+                                    <span className='nome_aluno'>{turma.nomeTurma}</span>
+                                )
+                            })
+                        }
+                    </div>
 
-                        <button 
-                        value={idTurma} 
-                        onClick={(campo) => setIdTurma(campo.target.value === 2)} 
+                    <button
+                        value={idTurma}
+                        onClick={() => setIdTurma(1)}
                         className="serie-EFI">
-                            2°
-                        </button>
-                        
-                        <button value={idTurma} onClick={(campo) => setIdTurma(campo.target.value === 3)} className="serie-EFI">
-                            3°
-                        </button>
-                    
-                    {/*  <Link to="/listagem" value='1' onChange={(campo) => setIdTurma(campo.target.value)} class="serie-EFI">
                         1°
-                    </Link>
-                    <Link to="/listagem" value='2' onChange={(campo) => setIdTurma(campo.target.value)} class="serie-EFI">
+                    </button>
+
+                    <button
+                        value={idTurma}
+                        onClick={() => setIdTurma(2)}
+                        className="serie-EFI">
                         2°
-                    </Link>
-                    <Link to="/listagem" value='3' onChange={(campo) => setIdTurma(campo.target.value)} class="serie-EFI">
+                    </button>
+
+                    <button
+                        value={idTurma}
+                        onClick={() => setIdTurma(3)}
+                        className="serie-EFI">
                         3°
-                    </Link> */}
-                    {/* <Link to="/listagem" class="serie-EFI">
-                        4°
-                    </Link>
-                    <Link to="/listagem" className="serie-EFI">
-                        5°
-                    </Link> */}
+                    </button>
 
                     <Link to="/perfil" className="espaco-aluno">
                         <div className="div-fotoaluno">
