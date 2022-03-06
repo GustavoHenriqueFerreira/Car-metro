@@ -15,7 +15,7 @@ export default function Verificacao() {
                         <p className='infos_verificadas'>Gustavo Rezende</p>
                         <p className='infos_verificadas'>3° ano A EM</p>
                     </div>
-                    {/* <div class="box_btn_professor"> */}
+                    {/* <div className="box_btn_professor"> */}
                 </div>
             </main>
         </div>

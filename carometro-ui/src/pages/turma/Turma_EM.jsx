@@ -12,16 +12,16 @@ export default function Turma_EM() {
 
             <main className='main_turma'>
                 <h1 className='titulo_serie'>Séries</h1>
-                <div class="linha-menu"></div>
+                <div className="linha-menu"></div>
                 
-                <section class="menu-series">
-                    <Link to="/listagem" class="serie-EM">
+                <section className="menu-series">
+                    <Link to="/listagem" className="serie-EM">
                         1°
                     </Link>
-                    <Link to="/listagem" class="serie-EM">
+                    <Link to="/listagem" className="serie-EM">
                         2°
                     </Link>
-                    <Link to="/listagem" class="serie-EM">
+                    <Link to="/listagem" className="serie-EM">
                         3°
                     </Link>
                 </section>
