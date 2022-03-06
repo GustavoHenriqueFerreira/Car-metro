@@ -44,18 +44,29 @@ namespace ProjetoInt.WebApi.Controllers
             return Ok(AlunoPesquisado);
         }
 
-        [HttpGet("Turma/{id}")]
-        public IActionResult ListarPorTurma(int idTurma)
-        {
-            Aluno AlunoPesquisado = _AlunoRepository.BuscarPorTurma(idTurma);
+        //[HttpGet("Turma/{idTurma}")]
+        //public IActionResult ListarPorTurma(int idTurma)
+        //{
+        //    //Aluno AlunoPesquisado = _AlunoRepository.BuscarPorTurma(idTurma);
 
-            if (AlunoPesquisado == null)
-            {
-                return NotFound("Nenhum Aluno encontrado!");
-            }
+        //    //if (AlunoPesquisado == null)
+        //    //{
+        //    //    return NotFound("Nenhum Aluno encontrado!");
+        //    //}
 
-            return Ok(AlunoPesquisado);
-        }
+        //    //return Ok(AlunoPesquisado);
+
+        //    Aluno AlunosFiltrados = _AlunoRepository.BuscarPorTurma(idTurma);
+
+        //    if (AlunosFiltrados == null)
+        //    {
+        //        return NotFound("Nenhum Aluno encontrado!");
+        //    }
+
+        //    return Ok(AlunosFiltrados);
+
+
+        //}
 
         [HttpPost]
         public IActionResult Post(Aluno novoAluno)

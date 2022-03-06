@@ -342,7 +342,6 @@ D:\Senai\2022-3S-3M\Carometro\BackEnd\ProjetoInt.WebApi\ProjetoInt.WebApi\obj\De
 D:\Senai\2022-3S-3M\Carometro\BackEnd\ProjetoInt.WebApi\ProjetoInt.WebApi\obj\Debug\net5.0\staticwebassets\ProjetoInt.WebApi.StaticWebAssets.xml
 D:\Senai\2022-3S-3M\Carometro\BackEnd\ProjetoInt.WebApi\ProjetoInt.WebApi\obj\Debug\net5.0\scopedcss\bundle\ProjetoInt.WebApi.styles.css
 D:\Senai\2022-3S-3M\Carometro\BackEnd\ProjetoInt.WebApi\ProjetoInt.WebApi\obj\Debug\net5.0\ProjetoInt.WebApi.RazorTargetAssemblyInfo.cache
-D:\Senai\2022-3S-3M\Carometro\BackEnd\ProjetoInt.WebApi\ProjetoInt.WebApi\obj\Debug\net5.0\ProjetoInt.WebApi.csproj.CopyComplete
 D:\Senai\2022-3S-3M\Carometro\BackEnd\ProjetoInt.WebApi\ProjetoInt.WebApi\obj\Debug\net5.0\ProjetoInt.WebApi.dll
 D:\Senai\2022-3S-3M\Carometro\BackEnd\ProjetoInt.WebApi\ProjetoInt.WebApi\obj\Debug\net5.0\ref\ProjetoInt.WebApi.dll
 D:\Senai\2022-3S-3M\Carometro\BackEnd\ProjetoInt.WebApi\ProjetoInt.WebApi\obj\Debug\net5.0\ProjetoInt.WebApi.xml

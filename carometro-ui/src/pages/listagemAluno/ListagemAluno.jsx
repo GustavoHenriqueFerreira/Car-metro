@@ -7,42 +7,23 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 export default function ListagemALuno() {
-    // TESTANDO COM MOCK API
-    /* const [listaAlunos, setListaAlunos] = useState([]);
-
-    function buscarAlunos() {
-        axios('https://6216e73471e7672e536e1d7f.mockapi.io/Aluno', {
-            /* headers: {
-                'Authorization': 'Bearer ' + localStorage.getItem('usuario-login')
-            }
-        })
-            .then(resposta => {
-                if (resposta.status === 200) {
-                    console.log(resposta.data)
-                    setListaAlunos(resposta.data)
-                };
-            })
-            .catch(erro => console.log(erro));
-    };
-    useEffect(buscarAlunos, []); */
-
+   
     const [listaAlunos, setListaAlunos] = useState([])
-    const [idAluno, setIdAluno] = useState(0)
-
-    buscarAlunos = () => {
-        console.log('Realizando a chamada para a API')
-        axios('http://localhost:5000/api/alunos/' + idAluno, {
-            headers: {
-                'Authorization': 'Bearer ' + localStorage.getItem('usuario-login')
-            }
-        }).then(response => {
-            if (response.status === 200) {
-                setListaAlunos(response.data)
-            }
-        })
-            .catch(erro => console.log(erro))
-    }
-
+        function buscarAlunos() {
+            console.log('Realizando a chamada para a API')
+            axios('http://localhost:5000/api/alunos/',{
+                headers: {
+                    'Authorization': 'Bearer ' + localStorage.getItem('usuario-login')
+                }
+            }).then(response => {
+                if (response.status === 200) {
+                    setListaAlunos(response.data)
+                }
+            })
+                .catch(erro => console.log(erro))
+        }
+    
+        useEffect(buscarAlunos, [])
 
     return (
         <div>
@@ -63,16 +44,17 @@ export default function ListagemALuno() {
                                     <hr className='linha_alunos' />
                                 </div>
                                 <Link to="/cadastroAluno" className='btn_cadastrar'>Cadastrar</Link>
+                                {/* <Link to="/cadastroProfessor" className='btn_cadastrar'>Cadastrar Professor</Link> */}
                             </div>
                         </div>
                     </section>
                     <section>
                         <div className="container_fotos">
                             <div className="box_fotos">
-
-                                {
-                                    listaAlunos.map((aluno) => {
+                            {/* {
+                                    this.state.listaAlunos.map((aluno) => {
                                         return (
+                                            console.log('cheguei aqui'),
                                             <Link to="/perfil" className="espaco-aluno">
                                                 <div className="div-fotoaluno">
                                                     <img className="foto_aluno" src={foto_aluno} alt="" />
@@ -84,94 +66,23 @@ export default function ListagemALuno() {
                                             </Link>
                                         )
                                     })
-                                }
+                                } */}
+                                 <Link to="/perfil" className="espaco-aluno">
+                                    <div className="div-fotoaluno">
+                                        <img className="foto_aluno" src={foto_aluno} alt="" />
+                                    </div>
 
-                                {/* <Link to="/perfil" className="espaco-aluno">
-                                <div className="div-fotoaluno">
-                                    <img className="foto_aluno" src={foto_aluno} alt="" />
-                                </div>
-
-                                <div className='container_nomeAluno'>
-                                    <p className="nome_aluno">Gustavo Henrique</p>
-                                </div>
-                            </Link>
-                            <Link to="/perfil" className="espaco-aluno">
-                                <div className="div-fotoaluno">
-                                    <img className="foto_aluno" src={foto_aluno} alt="" />
-                                </div>
-
-                                <div className='container_nomeAluno'>
-                                    <p className="nome_aluno">Gustavo Henrique</p>
-                                </div>
-                            </Link>
-                            <Link to="/perfil" className="espaco-aluno">
-                                <div className="div-fotoaluno">
-                                    <img className="foto_aluno" src={foto_aluno} alt="" />
-                                </div>
-
-                                <div className='container_nomeAluno'>
-                                    <p className="nome_aluno">Gustavo Henrique</p>
-                                </div>
-                            </Link>
-                            <Link to="/perfil" className="espaco-aluno">
-                                <div className="div-fotoaluno">
-                                    <img className="foto_aluno" src={foto_aluno} alt="" />
-                                </div>
-
-                                <div className='container_nomeAluno'>
-                                    <p className="nome_aluno">Gustavo Henrique</p>
-                                </div>
-                            </Link>
-                            <Link to="/perfil" className="espaco-aluno">
-                                <div className="div-fotoaluno">
-                                    <img className="foto_aluno" src={foto_aluno} alt="" />
-                                </div>
-
-                                <div className='container_nomeAluno'>
-                                    <p className="nome_aluno">Gustavo Henrique</p>
-                                </div>
-                            </Link>
-                            <Link to="/perfil" className="espaco-aluno">
-                                <div className="div-fotoaluno">
-                                    <img className="foto_aluno" src={foto_aluno} alt="" />
-                                </div>
-
-                                <div className='container_nomeAluno'>
-                                    <p className="nome_aluno">Gustavo Henrique</p>
-                                </div>
-                            </Link> */}
+                                    <div className='container_nomeAluno'>
+                                        <p className="nome_aluno">Gustavo Henrique</p>
+                                    </div>
+                                </Link>
+                              
                             </div>
                         </div>
                     </section>
                 </main>
             </div>
             <Rodape />
-            {/* <section>
-                    <div>
-                    {
-                            listaAlunos.map((alunos) => {
-                                return (
-                                    <div className="consulta-ConPac">
-                                        <h2>{alunos.idAluno} id do Aluno</h2>
-                                        <li className="topicos-ConPac">Telefone: {alunos.telefone}</li>
-                                        
-                                        <li className="topicos-ConPac">Comorbidade: {alunos.comorbidade}</li>
-                                        <li className="topicos-ConPac">foto Perfil: {alunos.fotoPerfil}</li>
-                                        
-                                        <li className="topicos-ConPac">Data da matrícula: {Intl.DateTimeFormat("pt-BR", {
-                                            year: 'numeric', month: 'short', day: 'numeric',
-                                            hour: 'numeric', minute: 'numeric',
-                                            hour12: true
-                                        }).format(new Date(alunos.dataMatricula))}</li>
-                                        <li className="topicos-ConPac">Turma: {alunos.turmas[0].nomeTurma} {alunos.turmas[0].grade}</li>
-                                        <li className="topicos-ConPac">Turno: {alunos.turmas[0].turno}</li>
-                                        {/* <li className="topicos-ConPac">Situação: {alunos.situacoes[0].nomeSituacao}</li> 
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                </section> */}
         </div>
     );
 }

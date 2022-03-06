@@ -12,7 +12,7 @@ namespace ProjetoInt.WebApi.Interfaces
 
         Aluno BuscarPorId(int idAluno);
 
-        Aluno BuscarPorTurma(int idTurma);
+        //Aluno BuscarPorTurma(int idTurma);
 
         void Cadastrar(Aluno novoAluno);
 

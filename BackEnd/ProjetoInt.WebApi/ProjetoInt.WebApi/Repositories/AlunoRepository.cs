@@ -51,11 +51,7 @@ namespace ProjetoInt.WebApi.Repositories
             return ctx.Alunos.FirstOrDefault(ab => ab.IdAluno == idAluno);
         }
 
-        public Aluno BuscarPorTurma(int idTurma)
-        {
-            return ctx.Alunos.FirstOrDefault(ab => ab.IdTurma == idTurma); ;
-        }
-
+        
         public void Cadastrar(Aluno novoAluno)
         {
             ctx.Alunos.Add(novoAluno);
