@@ -9,8 +9,8 @@ import Rodape from '../../components/rodape/rodape';
 export default function CadastroAluno() {
     const [idTurma, setIdTurma] = useState('');
     const [nomeAluno, setNomeAluno] = useState('');
-    const [rgAluno, setRgAluno] = useState(0);
-    const [telefoneAluno, setTelefoneAluno] = useState(0);
+    const [rgAluno, setRgAluno] = useState('');
+    const [telefoneAluno, setTelefoneAluno] = useState('');
     const [dataMatricula, setDataMatricula] = useState(new Date());
     const [comorbidade, setComorbidade] = useState('');
     const [aprovado, setAprovado] = useState(true);
@@ -44,8 +44,8 @@ export default function CadastroAluno() {
 
                     setIdTurma('');
                     setNomeAluno('');
-                    /* setRgAluno(0);
-                    setTelefoneAluno(0); */
+                    setRgAluno('');
+                    setTelefoneAluno('')
                     setDataMatricula('');
                     setComorbidade('');
                     setAprovado(true);
