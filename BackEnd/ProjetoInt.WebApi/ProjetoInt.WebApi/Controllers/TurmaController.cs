@@ -24,7 +24,7 @@ namespace ProjetoInt.WebApi.Controllers
         }
 
 
-        [HttpGet("Turma/{idTurma}")]
+        [HttpGet("{idTurma}")]
         public IActionResult ListarPorTurma(int idTurma)
         {
             //Aluno AlunoPesquisado = _AlunoRepository.BuscarPorTurma(idTurma);
