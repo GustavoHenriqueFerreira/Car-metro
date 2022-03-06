@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = ProjetoInt.WebApi
-build_property.ProjectDir = C:\Users\AMD\Desktop\Carometro\BackEnd\ProjetoInt.WebApi\ProjetoInt.WebApi\
+build_property.ProjectDir = D:\Senai\2022-3S-3M\Carometro\BackEnd\ProjetoInt.WebApi\ProjetoInt.WebApi\
