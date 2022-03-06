@@ -13,7 +13,8 @@ export default function PerfilAluno() {
 
     function buscarAlunos() {
         console.log('Realizando a chamada para a API, buscando aluno')
-        axios('http://localhost:5000/api/alunos/'+ idAluno,{
+
+        axios('http://localhost:5000/api/alunos/' + idAluno, {
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('usuario-login')
             }
@@ -26,7 +27,7 @@ export default function PerfilAluno() {
     }
 
     useEffect(buscarAlunos, [])
-   
+
 
     return (
         <div>
@@ -37,21 +38,26 @@ export default function PerfilAluno() {
                     <div className='titulo'>
                         <h1 className='titulo_aluno'>Perfil do aluno</h1>
                     </div>
-
                     <section className='perfil_aluno'>
                         <div className='foto'>
                             <img src={padrao} alt="" />
                         </div>
+                        {
+                           listaAlunos.map((aluno) => {
+                            return (
 
-                        <div className='info_aluno'>
-                            <span>Nome:</span>
-                            <span>RG:</span>
-                            <span>Data da Matrícula:</span>
-                            <span>Telefone:</span>
-                            <span>Turma:</span>
-                            <span>Comorbidade:</span>
-                            <span>Comentário:</span>
-                        </div>
+                            <div className='info_aluno'>
+                                <span>Nome:{aluno.NomeAluno}</span>
+                                <span>RG:{aluno.RgAluno}</span>
+                                <span>Data da Matrícula:{aluno.DataMatricula}</span>
+                                <span>Telefone:{aluno.TelefoneAluno}</span>
+                                <span>IdTurma:{aluno.IdTurma}</span>
+                                <span>Comorbidade:{aluno.Comorbidade}</span>
+                                <span>Comentário:{aluno.Comentario}</span>
+                            </div>
+                            )
+                           })
+                        }
                     </section>
                 </div>
             </main>

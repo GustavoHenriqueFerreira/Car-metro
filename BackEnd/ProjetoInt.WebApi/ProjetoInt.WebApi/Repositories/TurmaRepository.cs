@@ -16,5 +16,12 @@ namespace ProjetoInt.WebApi.Repositories
             return ctx.Alunos.Where(x => x.IdTurma == idTurma).ToList();
 
         }
+
+        public List<Turma> Listar()
+        {
+            return ctx.Turmas.ToList();
+        }
+
+     
     }
 }

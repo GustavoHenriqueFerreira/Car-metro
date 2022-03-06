@@ -47,5 +47,13 @@ namespace ProjetoInt.WebApi.Controllers
 
 
         }
+
+        [HttpGet]
+        public IActionResult get()
+        {
+            List<Turma> ListaTurmas = _TurmaRepository.Listar();
+
+            return Ok(ListaTurmas);
+        }
     }
 }
