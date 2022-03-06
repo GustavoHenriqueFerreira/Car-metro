@@ -9,7 +9,7 @@ import {
 import reportWebVitals from './reportWebVitals';
 
 import ListagemAluno from './pages/listagemAluno/ListagemAluno';
-import Login from './pages/Login/Login.jsx';
+// import Login from './pages/Login/Login.jsx';
 import Menu from './pages/menu/Menu';
 import PerfilAluno from './pages/perfilAluno/PerfilAluno';
 import CadastroProfessor from './pages/cadastro/CadastroProfessor';
@@ -33,7 +33,7 @@ const routing = (
         <Route exact path="/turma_EM" component={Turma_EM} /> {/* Turmas do ensino médio */}
         <Route exact path="/turma_EFI" component={Turma_EFI} /> {/* Turmas do ensino fundamental I */}
         <Route exact path="/turma_EFII" component={Turma_EFII} /> {/* Turmas do ensino fundamental II */}
-        <Route path="/" component={Login}/> {/* Login */}
+        {/*<Route path="/" component={Login}/> {/* Login */}
         <Route path="/notFound" component={NotFound} /> {/* Not Found */}
         <Redirect to="/notFound" /> {/* Redireciona para Not Found caso não encontre nenhuma rota */}
       </Switch>
