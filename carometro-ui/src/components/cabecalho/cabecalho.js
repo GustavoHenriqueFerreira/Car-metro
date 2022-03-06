@@ -8,10 +8,10 @@ export default function Cabecalho() {
     return (
         <div className='cabecalho'>
             <header>
-                <section class="container-header">
-                    <div class="conteudo-header"></div>
-                    <div class="conteudo-header"><Link to="/menu"><img src={logo} alt="Logo Sonedev" /></Link></div>
-                    <div class="logout-header"><img src={logout} alt="Símbolo Logout" /></div>
+                <section className="container-header">
+                    <div className="conteudo-header"></div>
+                    <div className="conteudo-header"><Link to="/menu"><img src={logo} alt="Logo Sonedev" /></Link></div>
+                    <div className="logout-header"><img src={logout} alt="Símbolo Logout" /></div>
                 </section>
             </header>
         </div>

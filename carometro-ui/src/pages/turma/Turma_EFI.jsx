@@ -12,22 +12,22 @@ export default function Turma_EFI() {
 
             <main className='main_turma'>
                 <h1 className='titulo_serie'>Séries</h1>
-                <div class="linha-menu"></div>
+                <div className="linha-menu"></div>
                 
-                <section class="menu-series">
-                    <Link to="/listagem" class="serie-EFI">
+                <section className="menu-series">
+                    <Link to="/listagem" className="serie-EFI">
                         1°
                     </Link>
-                    <Link to="/listagem" class="serie-EFI">
+                    <Link to="/listagem" className="serie-EFI">
                         2°
                     </Link>
-                    <Link to="/listagem" class="serie-EFI">
+                    <Link to="/listagem" className="serie-EFI">
                         3°
                     </Link>
-                    <Link to="/listagem" class="serie-EFI">
+                    <Link to="/listagem" className="serie-EFI">
                         4°
                     </Link>
-                    <Link to="/listagem" class="serie-EFI">
+                    <Link to="/listagem" className="serie-EFI">
                         5°
                     </Link>
                 </section>

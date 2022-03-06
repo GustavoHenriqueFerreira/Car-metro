@@ -146,15 +146,15 @@ export default function CadastroAluno() {
                                 <input className="select_turma" type="file" name="arquivo" id="arquivo"></input>
                             </div>
 
-                            <div class="box_btn_aluno">
-                                <button type="submit" class="btn_aluno">Cadastrar</button>
+                            <div className="box_btn_aluno">
+                                <button type="submit" className="btn_aluno">Cadastrar</button>
                             </div>
                         </form>
 
                         {/* <form>
                             <div>
                                 <input id="telNo" name="telNo" type="tel" required/>
-                                    <span class="validity"></span>
+                                    <span className="validity"></span>
                                     <button>cadastrar</button>
                             </div>
                         </form> */}

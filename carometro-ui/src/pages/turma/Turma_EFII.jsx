@@ -12,19 +12,19 @@ export default function Turma_EFII() {
 
             <main className='main_turma'>
                 <h1 className='titulo_serie'>Séries</h1>
-                <div class="linha-menu"></div>
+                <div className="linha-menu"></div>
                 
-                <section class="menu-series">
-                    <Link to="/listagem" to="/listagem" class="serie-EFII">
+                <section className="menu-series">
+                    <Link to="/listagem" to="/listagem" className="serie-EFII">
                         6°
                     </Link>
-                    <Link to="/listagem" class="serie-EFII">
+                    <Link to="/listagem" className="serie-EFII">
                         7°
                     </Link>
-                    <Link to="/listagem" class="serie-EFII">
+                    <Link to="/listagem" className="serie-EFII">
                         8°
                     </Link>
-                    <Link to="/listagem" class="serie-EFII">
+                    <Link to="/listagem" className="serie-EFII">
                         9°
                     </Link>
                 </section>

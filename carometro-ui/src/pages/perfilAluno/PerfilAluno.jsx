@@ -2,8 +2,32 @@ import '../../assets/css/perfilAluno.css'
 import padrao from '../../assets/img/padrao.png';
 import Cabecalho from '../../components/cabecalho/cabecalho';
 import Rodape from '../../components/rodape/rodape';
+import { useState, useEffect } from "react";
+import axios from 'axios';
+
 
 export default function PerfilAluno() {
+
+    const [listaAlunos, setListaAlunos] = useState([])
+    const [idAluno, setIdAluno] = useState("0")
+
+    function buscarAlunos() {
+        console.log('Realizando a chamada para a API, buscando aluno')
+        axios('http://localhost:5000/api/alunos/'+ idAluno,{
+            headers: {
+                'Authorization': 'Bearer ' + localStorage.getItem('usuario-login')
+            }
+        }).then(response => {
+            if (response.status === 200) {
+                setListaAlunos(response.data)
+            }
+        })
+            .catch(erro => console.log(erro))
+    }
+
+    useEffect(buscarAlunos, [])
+   
+
     return (
         <div>
             <Cabecalho />

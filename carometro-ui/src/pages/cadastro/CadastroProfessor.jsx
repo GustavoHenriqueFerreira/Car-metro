@@ -40,8 +40,8 @@ export default function CadastroProfessor() {
 
                             </div>
 
-                            <div class="box_btn_professor">
-                                <button class="btn_professor">Cadastrar</button>
+                            <div className="box_btn_professor">
+                                <button className="btn_professor">Cadastrar</button>
                             </div>
                         </form>
                     </section>
