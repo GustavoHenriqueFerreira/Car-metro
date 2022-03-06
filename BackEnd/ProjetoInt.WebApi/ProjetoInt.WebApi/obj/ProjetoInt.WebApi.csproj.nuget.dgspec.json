@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\42410863817.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj": {}
+    "D:\\Senai\\2022-3S-3M\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\42410863817.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj": {
+    "D:\\Senai\\2022-3S-3M\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\42410863817.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj",
+        "projectUniqueName": "D:\\Senai\\2022-3S-3M\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj",
         "projectName": "ProjetoInt.WebApi",
-        "projectPath": "C:\\Users\\42410863817.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj",
-        "packagesPath": "C:\\Users\\42410863817.INFOSCS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\42410863817.INFOSCS\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\obj\\",
+        "projectPath": "D:\\Senai\\2022-3S-3M\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj",
+        "packagesPath": "C:\\Users\\gustr\\.nuget\\packages\\",
+        "outputPath": "D:\\Senai\\2022-3S-3M\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\42410863817.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gustr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }

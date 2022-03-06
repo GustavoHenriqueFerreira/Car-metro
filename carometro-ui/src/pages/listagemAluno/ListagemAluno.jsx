@@ -7,6 +7,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 export default function ListagemALuno() {
+    // TESTANDO COM MOCK API
     /* const [listaAlunos, setListaAlunos] = useState([]);
 
     function buscarAlunos() {
@@ -23,8 +24,25 @@ export default function ListagemALuno() {
             })
             .catch(erro => console.log(erro));
     };
-
     useEffect(buscarAlunos, []); */
+
+    const [listaAlunos, setListaAlunos] = useState([])
+    const [idAluno, setIdAluno] = useState(0)
+
+    buscarAlunos = () => {
+        console.log('Realizando a chamada para a API')
+        axios('http://localhost:5000/api/alunos/' + idAluno, {
+            headers: {
+                'Authorization': 'Bearer ' + localStorage.getItem('usuario-login')
+            }
+        }).then(response => {
+            if (response.status === 200) {
+                setListaAlunos(response.data)
+            }
+        })
+            .catch(erro => console.log(erro))
+    }
+
 
     return (
         <div>
@@ -51,69 +69,77 @@ export default function ListagemALuno() {
                     <section>
                         <div className="container_fotos">
                             <div className="box_fotos">
-                                <Link to="/perfil" className="espaco-aluno">
-                                    <div className="div-fotoaluno">
-                                        <img className="foto_aluno" src={foto_aluno} alt="" />
-                                    </div>
 
-                                    <div className='container_nomeAluno'>
-                                        <p className="nome_aluno">Gustavo Henrique</p>
-                                    </div>
-                                </Link>
-                                <Link to="/perfil" className="espaco-aluno">
-                                    <div className="div-fotoaluno">
-                                        <img className="foto_aluno" src={foto_aluno} alt="" />
-                                    </div>
+                                {
+                                    listaAlunos.map((aluno) => {
+                                        return (
+                                            <Link to="/perfil" className="espaco-aluno">
+                                                <div className="div-fotoaluno">
+                                                    <img className="foto_aluno" src={foto_aluno} alt="" />
+                                                </div>
 
-                                    <div className='container_nomeAluno'>
-                                        <p className="nome_aluno">Gustavo Henrique</p>
-                                    </div>
-                                </Link>
-                                <Link to="/perfil" className="espaco-aluno">
-                                    <div className="div-fotoaluno">
-                                        <img className="foto_aluno" src={foto_aluno} alt="" />
-                                    </div>
+                                                <div className='container_nomeAluno'>
+                                                    <p className="nome_aluno">{aluno.nomeAluno}</p>
+                                                </div>
+                                            </Link>
+                                        )
+                                    })
+                                }
 
-                                    <div className='container_nomeAluno'>
-                                        <p className="nome_aluno">Gustavo Henrique</p>
-                                    </div>
-                                </Link>
-                                <Link to="/perfil" className="espaco-aluno">
-                                    <div className="div-fotoaluno">
-                                        <img className="foto_aluno" src={foto_aluno} alt="" />
-                                    </div>
+                                {/* <Link to="/perfil" className="espaco-aluno">
+                                <div className="div-fotoaluno">
+                                    <img className="foto_aluno" src={foto_aluno} alt="" />
+                                </div>
 
-                                    <div className='container_nomeAluno'>
-                                        <p className="nome_aluno">Gustavo Henrique</p>
-                                    </div>
-                                </Link>
-                                <Link to="/perfil" className="espaco-aluno">
-                                    <div className="div-fotoaluno">
-                                        <img className="foto_aluno" src={foto_aluno} alt="" />
-                                    </div>
+                                <div className='container_nomeAluno'>
+                                    <p className="nome_aluno">Gustavo Henrique</p>
+                                </div>
+                            </Link>
+                            <Link to="/perfil" className="espaco-aluno">
+                                <div className="div-fotoaluno">
+                                    <img className="foto_aluno" src={foto_aluno} alt="" />
+                                </div>
 
-                                    <div className='container_nomeAluno'>
-                                        <p className="nome_aluno">Gustavo Henrique</p>
-                                    </div>
-                                </Link>
-                                <Link to="/perfil" className="espaco-aluno">
-                                    <div className="div-fotoaluno">
-                                        <img className="foto_aluno" src={foto_aluno} alt="" />
-                                    </div>
+                                <div className='container_nomeAluno'>
+                                    <p className="nome_aluno">Gustavo Henrique</p>
+                                </div>
+                            </Link>
+                            <Link to="/perfil" className="espaco-aluno">
+                                <div className="div-fotoaluno">
+                                    <img className="foto_aluno" src={foto_aluno} alt="" />
+                                </div>
 
-                                    <div className='container_nomeAluno'>
-                                        <p className="nome_aluno">Gustavo Henrique</p>
-                                    </div>
-                                </Link>
-                                <Link to="/perfil" className="espaco-aluno">
-                                    <div className="div-fotoaluno">
-                                        <img className="foto_aluno" src={foto_aluno} alt="" />
-                                    </div>
+                                <div className='container_nomeAluno'>
+                                    <p className="nome_aluno">Gustavo Henrique</p>
+                                </div>
+                            </Link>
+                            <Link to="/perfil" className="espaco-aluno">
+                                <div className="div-fotoaluno">
+                                    <img className="foto_aluno" src={foto_aluno} alt="" />
+                                </div>
 
-                                    <div className='container_nomeAluno'>
-                                        <p className="nome_aluno">Gustavo Henrique</p>
-                                    </div>
-                                </Link>
+                                <div className='container_nomeAluno'>
+                                    <p className="nome_aluno">Gustavo Henrique</p>
+                                </div>
+                            </Link>
+                            <Link to="/perfil" className="espaco-aluno">
+                                <div className="div-fotoaluno">
+                                    <img className="foto_aluno" src={foto_aluno} alt="" />
+                                </div>
+
+                                <div className='container_nomeAluno'>
+                                    <p className="nome_aluno">Gustavo Henrique</p>
+                                </div>
+                            </Link>
+                            <Link to="/perfil" className="espaco-aluno">
+                                <div className="div-fotoaluno">
+                                    <img className="foto_aluno" src={foto_aluno} alt="" />
+                                </div>
+
+                                <div className='container_nomeAluno'>
+                                    <p className="nome_aluno">Gustavo Henrique</p>
+                                </div>
+                            </Link> */}
                             </div>
                         </div>
                     </section>
