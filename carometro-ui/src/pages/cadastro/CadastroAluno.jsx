@@ -14,8 +14,8 @@ export default function CadastroAluno() {
     const [dataMatricula, setDataMatricula] = useState(new Date());
     const [comorbidade, setComorbidade] = useState('');
     const [aprovado, setAprovado] = useState(true);
-    const [comentario, setComentario] = useState('');
     const [confirmacaoMensagem, SetMensagem] = useState('');
+    /* const [comentario, setComentario] = useState(''); */
 
     function Cadastro(evento) {
         evento.preventDefault();
@@ -31,7 +31,7 @@ export default function CadastroAluno() {
             dataMatricula: dataMatricula,
             comorbidade: comorbidade,
             aprovado: aprovado,
-            comentario: comentario,
+            /* comentario: comentario, */
         }, {
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('usuario-login')
@@ -49,7 +49,7 @@ export default function CadastroAluno() {
                     setDataMatricula('');
                     setComorbidade('');
                     setAprovado(true);
-                    setComentario('');
+                    /* setComentario(''); */
 
                     /* setIsLoading(false); */
                     SetMensagem('Cadastrado com sucesso!')
@@ -150,14 +150,6 @@ export default function CadastroAluno() {
                                 <button type="submit" class="btn_aluno">Cadastrar</button>
                             </div>
                         </form>
-
-                        {/* <form>
-                            <div>
-                                <input id="telNo" name="telNo" type="tel" required/>
-                                    <span class="validity"></span>
-                                    <button>cadastrar</button>
-                            </div>
-                        </form> */}
                     </section>
                 </div>
             </main>
