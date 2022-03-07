@@ -100,7 +100,7 @@ export default function PerfilAluno() {
                         <div className='foto'>
                             <img src={padrao} alt="" />
                         </div>
-                        {/* {
+                        {
                                 listaAlunos.map((aluno) => {
                                     return (
 
@@ -115,7 +115,7 @@ export default function PerfilAluno() {
                                         </div>
                                     )
                                 })
-                            } */}
+                            }
                         {/* <label onChange={this.atualizaState} for="arquivo">Escolher arquivo</label>
                             <input onChange={this.atualizaState} className="select_turma" type="file" name="arquivo" id="arquivo"></input>
                             <input type="file" onChange={this.atualizaState} />
