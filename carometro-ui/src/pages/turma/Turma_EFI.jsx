@@ -26,7 +26,7 @@ export default function Turma_EFI() {
             .catch(erro => console.log(erro))
     }
 
-    function buscarTurmas() {
+    /* function buscarTurmas() {
         console.log('Realizando a chamada para a API')
         axios('http://localhost:5000/api/Turma', {
             headers: {
@@ -38,9 +38,9 @@ export default function Turma_EFI() {
             }
         })
             .catch(erro => console.log(erro))
-    }
+    } */
 
-    useEffect(buscarAlunos, buscarTurmas, [])
+    useEffect(buscarAlunos, [])
 
     console.log(idTurma);
 
@@ -53,16 +53,16 @@ export default function Turma_EFI() {
                 <div class="linha-menu"></div>
 
                 <section class="menu-series">
-                    <div className='serie-EF'>
-                        {
-                            listaTurmas.map((turma) => {
-                                return (
-                                    console.log('cheguei aqui'),
+                    {/* {
+                        listaTurmas.map((turma) => {
+                            return (
+                                console.log('cheguei aqui'),
+                                <div className='serie-EF'>
                                     <span className='nome_aluno'>{turma.nomeTurma}</span>
-                                )
-                            })
-                        }
-                    </div>
+                                </div>
+                            )
+                        })
+                    } */}
 
                     <button
                         value={idTurma}
@@ -86,25 +86,28 @@ export default function Turma_EFI() {
                     </button>
 
                     <Link to="/perfil" className="espaco-aluno">
-                        <div className="div-fotoaluno">
+                        {/* <div className="div-fotoaluno">
                             <img className="foto_aluno" src={foto_aluno} alt="" />
-                        </div>
+                        </div> */}
 
                         {
                             listaAlunos.map((aluno) => {
                                 return (
                                     console.log('cheguei aqui'),
-                                    <div className='container_nomeAluno'>
-                                        <p className="nome_aluno">{aluno.nomeAluno}</p>
+                                    <div>
+                                        {/* <div className="div-fotoaluno">
+                                            <img className="foto_aluno" src={foto_aluno} alt="" />
+                                        </div> */}
+
+                                        <div className='container_nomeAluno'>
+                                            <p className="nome_aluno">{aluno.nomeAluno}</p>
+                                        </div>
                                     </div>
                                 )
                             })
                         }
                     </Link>
                 </section>
-
-
-
             </main>
 
             <Rodape />
