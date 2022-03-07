@@ -11,9 +11,6 @@ namespace ProjetoInt.WebApi.Interfaces
         public List<Aluno> BuscarPorTurma(int idTurma);
 
         List<Turma> Listar();
-<<<<<<< HEAD
 
-=======
->>>>>>> 3aa2cf5cbfffcecdf88e64853a1cfccc5c49ffed
     }
 }

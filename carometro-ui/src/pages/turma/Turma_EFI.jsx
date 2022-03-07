@@ -13,6 +13,7 @@ export default function Turma_EFI() {
     const [idTurma, setIdTurma] = useState([]);
 
     function buscarAlunos() {
+
         console.log('Realizando a chamada para a API')
         axios('http://localhost:5000/api/Turma/' + idTurma, {
             headers: {
@@ -47,10 +48,9 @@ export default function Turma_EFI() {
     return (
         <div>
             <Cabecalho />
-
             <main className='main_turma'>
                 <h1 className='titulo_serie'>Séries</h1>
-                <div class="linha-menu"></div>
+                <div className="linha-menu"></div>
 
                 <section class="menu-series">
                     {/* {
@@ -63,7 +63,6 @@ export default function Turma_EFI() {
                             )
                         })
                     } */}
-
                     <button
                         value={idTurma}
                         onClick={() => setIdTurma(1)}
@@ -85,28 +84,26 @@ export default function Turma_EFI() {
                         3°
                     </button>
 
-                    <Link to="/perfil" className="espaco-aluno">
-                        {/* <div className="div-fotoaluno">
-                            <img className="foto_aluno" src={foto_aluno} alt="" />
-                        </div> */}
-
-                        {
-                            listaAlunos.map((aluno) => {
-                                return (
-                                    console.log('cheguei aqui'),
-                                    <div>
-                                        {/* <div className="div-fotoaluno">
+                    <div className="SessaoSeries">
+                        
+                            {
+                                listaAlunos.map((aluno) => {
+                                    return (
+                                        console.log('cheguei aqui'),
+                                        <div className='cardAluno'>
+                                            <div className="div-fotoaluno">
                                             <img className="foto_aluno" src={foto_aluno} alt="" />
-                                        </div> */}
-
-                                        <div className='container_nomeAluno'>
-                                            <p className="nome_aluno">{aluno.nomeAluno}</p>
                                         </div>
-                                    </div>
-                                )
-                            })
-                        }
-                    </Link>
+
+                                            <div className='container_nomeAluno'>
+                                                <p className="nome_aluno">{aluno.nomeAluno}</p>
+                                            </div>
+                                        </div>
+                                    )
+                                })
+                            }
+                      
+                    </div>
                 </section>
             </main>
 

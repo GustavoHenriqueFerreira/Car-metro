@@ -21,9 +21,6 @@ namespace ProjetoInt.WebApi.Repositories
         {
             return ctx.Turmas.ToList();
         }
-<<<<<<< HEAD
 
-=======
->>>>>>> 3aa2cf5cbfffcecdf88e64853a1cfccc5c49ffed
     }
 }
