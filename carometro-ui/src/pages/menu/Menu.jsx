@@ -17,11 +17,11 @@ export default function Menu() {
                     <Link to="/turma_EM" className="grade1">
                         <p className="texto-grade">EM</p>
                     </Link>
-                    <Link to="/turma_EFI" className="grade2">
-                        <p className="texto-grade">EF I</p>
-                    </Link>
-                    <Link to="/turma_EFII" className="grade3">
+                    <Link to="/turma_EFII" className="grade2">
                         <p className="texto-grade">EF II</p>
+                    </Link>
+                    <Link to="/turma_EFI" className="grade3">
+                        <p className="texto-grade">EF I</p>
                     </Link>
 
                 </section>

@@ -85,24 +85,33 @@ export default function Turma_EFI() {
                     </button>
 
                     <div className="SessaoSeries">
-                        
-                            {
-                                listaAlunos.map((aluno) => {
-                                    return (
-                                        console.log('cheguei aqui'),
-                                        <div className='cardAluno'>
-                                            <div className="div-fotoaluno">
+
+                        {
+                            listaAlunos.map((aluno) => {
+                                return (
+                                    console.log('cheguei aqui'),
+                                    <div className="espaco-aluno">
+                                        <div className="div-fotoaluno">
                                             <img className="foto_aluno" src={foto_aluno} alt="" />
                                         </div>
 
-                                            <div className='container_nomeAluno'>
-                                                <p className="nome_aluno">{aluno.nomeAluno}</p>
-                                            </div>
+                                        <div className='container_nomeAluno'>
+                                            <p className="nome_aluno">{aluno.nomeAluno}</p>
                                         </div>
+                                    </div>
                                     )
                                 })
                             }
-                      
+                            {/* <div className='cardAluno'>
+                                <div className="div-fotoaluno">
+                                <img className="foto_aluno" src={foto_aluno} alt="" />
+                            </div>
+
+                                <div className='container_nomeAluno'>
+                                    <p className="nome_aluno">{aluno.nomeAluno}</p>
+                                </div>
+                            </div> */}
+
                     </div>
                 </section>
             </main>

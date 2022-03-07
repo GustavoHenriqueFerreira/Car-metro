@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Senai\\2022-3S-3M\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj": {}
+    "C:\\Users\\AMD\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj": {}
   },
   "projects": {
-    "D:\\Senai\\2022-3S-3M\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj": {
+    "C:\\Users\\AMD\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Senai\\2022-3S-3M\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\AMD\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj",
         "projectName": "ProjetoInt.WebApi",
-        "projectPath": "D:\\Senai\\2022-3S-3M\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj",
-        "packagesPath": "C:\\Users\\gustr\\.nuget\\packages\\",
-        "outputPath": "D:\\Senai\\2022-3S-3M\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\obj\\",
+        "projectPath": "C:\\Users\\AMD\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\ProjetoInt.WebApi.csproj",
+        "packagesPath": "C:\\Users\\AMD\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AMD\\Desktop\\Carometro\\BackEnd\\ProjetoInt.WebApi\\ProjetoInt.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gustr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AMD\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

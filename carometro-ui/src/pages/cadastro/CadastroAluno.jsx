@@ -126,9 +126,9 @@ export default function CadastroAluno() {
                             <div className='selects'>
                                 <select className='select_turma' value={idTurma} name="" id="">
                                     <option className='option_turma' value={idTurma}>Turma</option> 
-                                    <option className='option_turma' value='1' onClick={(campo) => setIdTurma(campo.target.value)}>2° Ano</option> 
-                                    <option className='option_turma' value='2' onClick={(campo) => setIdTurma(campo.target.value)}>9° Ano</option> 
-                                    <option className='option_turma' value='3' onClick={(campo) => setIdTurma(campo.target.value)}>3° Ano</option>
+                                    <option className='option_turma' value={idTurma} onClick={() => setIdTurma(1)}>2° Ano</option> 
+                                    <option className='option_turma' value={idTurma} onClick={() => setIdTurma(2)}>9° Ano</option> 
+                                    <option className='option_turma' value={idTurma} onClick={() => setIdTurma(3)}>3° Ano</option>
                                     {/*<option className='option_turma' value="">EF I 1°C</option> <option className='option_turma' value={idTurma}>Turma</option> <option className='option_turma' value="">EF I 2°A</option> <option className='option_turma' value="">EF I 2°B</option> <option className='option_turma' value="">EF I 2°C</option>
                                     <option className='option_turma' value={idTurma}>Turma</option> <option className='option_turma' value="">EF I 3°A</option> <option className='option_turma' value="">EF I 3°B</option> <option className='option_turma' value="">EF I 3°C</option>
                                     <option className='option_turma' value="">Turma</option> <option className='option_turma' value="">EF I 4°A</option> <option className='option_turma' value="">EF I 4°B</option> <option className='option_turma' value="">EF I 4°C</option>

@@ -9,7 +9,7 @@ export default function CadastroProfessor() {
     const [idTipoUsuario, setIdTipoUsuario] = useState('');
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
-    const [senha, setSenha] = useState(0);
+    const [senha, setSenha] = useState('');
     const [confirmacaoMensagem, SetMensagem] = useState('');
 
     function Cadastro(evento) {
@@ -18,7 +18,7 @@ export default function CadastroProfessor() {
         SetMensagem('')
         /* setIsLoading(true); */
 
-        axios.post('http://localhost:5000/api/Alunos', {
+        axios.post('http://localhost:5000/api/Usuarios', {
             idTipoUsuario: idTipoUsuario,
             nome: nome,
             email: email,
@@ -33,7 +33,7 @@ export default function CadastroProfessor() {
 
                     console.log('Cadastrado');
 
-                    setIdTipoUsuario(1);
+                    setIdTipoUsuario(2);
                     setNome('');
                     setEmail('');
                     setSenha('');
@@ -60,22 +60,28 @@ export default function CadastroProfessor() {
                     </div>
 
                     <section className="container_professor box_professor">
-                        <form className="">
+                        <form onSubmit={Cadastro} className="">
 
                             <div className="box_input_professor">
                                 <input className="input_professor"
+                                    value={nome}
+                                    onChange={(campo) => setNome(campo.target.value)}
                                     name="nome"
                                     type="text"
                                     placeholder="Nome">
                                 </input>
 
                                 <input className="input_professor"
+                                    value={email}
+                                    onChange={(campo) => setEmail(campo.target.value)}
                                     name="email"
                                     type="email"
                                     placeholder="Email">
                                 </input>
 
                                 <input className="input_professor"
+                                    value={senha}
+                                    onChange={(campo) => setSenha(campo.target.value)}
                                     name="senha"
                                     type="password"
                                     placeholder="Senha">
@@ -84,7 +90,13 @@ export default function CadastroProfessor() {
                             </div>
 
                             <div className="box_btn_professor">
-                                <button className="btn_professor">Cadastrar</button>
+                                <button
+                                    value={idTipoUsuario}
+                                    onChange={() => setIdTipoUsuario(2)}
+                                    type='submit'
+                                    className="btn_professor">
+                                    Cadastrar
+                                </button>
                             </div>
                         </form>
                     </section>

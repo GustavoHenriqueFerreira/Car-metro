@@ -44,7 +44,7 @@ namespace ProjetoInt.WebApi.Controllers
         {
             try
             {
-                if (novaFotoAluno.Length > 500000000)
+                if (novaFotoAluno.Length > 500000000000)
                     return BadRequest(new { mensagem = "O tamanho máximo da imagem foi atingido." });
 
                 string extensao = novaFotoAluno.FileName.Split('.').Last();
